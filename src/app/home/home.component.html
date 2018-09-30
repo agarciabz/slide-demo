@@ -1,3 +1,10 @@
-<p>
-  home works!
-</p>
+<div class="home-page">
+  <app-home-sidenav [@slideMenu]="isVisible ? true : false" [hidden]="!isVisible"></app-home-sidenav>
+  <div class="home-content">
+    <div class="home-label">
+      <span>This content should expand upon hiding sidenav</span>
+    </div>
+    <button (click)="onToggle()">
+      Toggle Sidenav
+    </button>
+  </div>
